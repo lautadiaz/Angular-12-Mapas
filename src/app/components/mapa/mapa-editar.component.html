@@ -1,0 +1,18 @@
+<form [formGroup]="forma">
+
+  <mat-form-field>
+    <input matInput
+           placeholder="Titulo"
+           formControlName="titulo">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput
+              placeholder="Descripcion"
+              formControlName="desc"></textarea>
+  </mat-form-field>
+
+  <button (click)="guardarCambios()" mat-raised-button color="primary" class="bt1">Editar</button>
+  <button (click)="onNoClick()" mat-raised-button color="warn">Cancelar</button>
+
+</form>
